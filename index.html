@@ -10,6 +10,12 @@
   </head>
   <body>
     <div class="container">
+      <div class="flex">
+        <div class="box-1">1</div>
+
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+      </div>
       <form class="form">
         <div data-form-one class="first-form">
           <h4>Create you account</h4>
@@ -23,8 +29,35 @@
           <input type="password" placeholder="Confirm Password" /><br />
           <button class="btn btn-next">Next</button>
         </div>
-        <div data-form-two class="second-form"></div>
-        <div data-form-three class="third-form"></div>
+
+        <div data-form-two class="second-form">
+          <h4>PERSONAL DETAILS</h4>
+          <p>We will never sell it</p>
+
+          <label for="email"></label>
+          <input type="text" placeholder="First Name" />
+          <label></label>
+          <input type="text" placeholder="Last Name" />
+          <label></label>
+          <input type="text" placeholder="Phone" /><br />
+          <textarea class="text-area"></textarea>
+          <button class="btn btn-next">Next</button>
+          <button class="btn btn-next">Previous</button>
+        </div>
+
+        <div data-form-three class="third-form">
+          <h4>SOCIAL PROFILES</h4>
+          <p>Your presence on the social network</p>
+
+          <label for="email"></label>
+          <input type="text" placeholder="Twitter" />
+          <label></label>
+          <input type="text" placeholder="Facebook" />
+          <label></label>
+          <input type="text" placeholder="Google Plus" /><br />
+          <button class="btn btn-next">Previous</button>
+          <button class="btn btn-next">Submit</button>
+        </div>
       </form>
     </div>
   </body>
