@@ -20,6 +20,41 @@ body {
   margin-top: 100px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 1px #313131;
+
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left: 750px;
+}
+@-webkit-keyframes popup {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes popback {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .second-form {
@@ -29,7 +64,34 @@ body {
   margin-top: 100px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 1px #313131;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 750px;
 }
+
+@-webkit-keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  95% {
+    opacity: 0.9;
+    transform: translate(-20px);
+    transition: 0.8s;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .third-form {
   background-color: white;
   margin: auto;
@@ -37,6 +99,30 @@ body {
   margin-top: 100px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 1px #313131;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 750px;
+}
+
+@-webkit-keyframes slideout {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(170px);
+  }
 }
 .form {
   text-align: center;
@@ -54,6 +140,7 @@ input {
   height: 40px;
   font-family: inherit;
   margin: 5px;
+  cursor: pointer;
 }
 .btn-next {
   margin-top: 10px;
@@ -95,23 +182,47 @@ p {
 .flex > div {
   display: flex;
   align-items: center;
-  padding: 5px;
+
   background-color: white;
-  margin: 15px 65px 0 65px;
-  width: 15px;
-  height: 15px;
-  border-radius: 5px;
 }
 
 .box-1 {
   display: flex;
   justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  padding: 5px;
 }
 .box-2 {
   display: flex;
   justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  padding: 5px;
 }
 .box-3 {
   display: flex;
   justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.line1 {
+  width: 100px;
+  height: 3px;
+  margin-top: 9px;
+}
+.line2 {
+  width: 100px;
+  height: 3px;
+  margin-top: 9px;
 }
