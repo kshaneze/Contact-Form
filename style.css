@@ -15,16 +15,17 @@ body {
 
 .first-form {
   background-color: white;
-  margin: auto;
   width: 350px;
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 1px #313131;
-
   position: absolute;
   z-index: 3;
-  top: 100px;
-  left: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 @-webkit-keyframes popup {
   0% {
@@ -61,13 +62,16 @@ body {
   background-color: white;
 
   width: 350px;
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 1px #313131;
   position: absolute;
   z-index: 2;
-  top: 100px;
-  left: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 @-webkit-keyframes slidein {
@@ -94,15 +98,18 @@ body {
 
 .third-form {
   background-color: white;
-  margin: auto;
+
   width: 350px;
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 1px #313131;
   position: absolute;
   z-index: 1;
-  top: 100px;
-  left: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 @-webkit-keyframes slideout {
@@ -177,13 +184,25 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 70px;
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 14px;
+  gap: 32px;
+}
+.flex-2 > span {
+  display: flex;
+  align-items: center;
 }
 
 .flex > div {
   display: flex;
   align-items: center;
-
-  background-color: white;
 }
 
 .box-1 {
@@ -193,7 +212,11 @@ p {
   height: 15px;
   border-radius: 5px;
   padding: 5px;
+  background-color: rgb(25, 155, 68);
+  color: white;
+  position: relative;
 }
+
 .box-2 {
   display: flex;
   justify-content: center;
@@ -201,6 +224,7 @@ p {
   height: 15px;
   border-radius: 5px;
   padding: 5px;
+  background-color: white;
 }
 .box-3 {
   display: flex;
@@ -209,20 +233,33 @@ p {
   height: 15px;
   border-radius: 5px;
   padding: 5px;
-}
-
-.hidden {
-  opacity: 0;
-  pointer-events: none;
+  background-color: white;
 }
 
 .line1 {
-  width: 100px;
+  width: 120px;
   height: 3px;
-  margin-top: 9px;
+  margin-top: 10px;
+  background-color: white;
 }
 .line2 {
-  width: 100px;
+  width: 120px;
   height: 3px;
-  margin-top: 9px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.account {
+  color: rgb(25, 155, 68);
+}
+.social {
+  color: white;
+}
+
+.personal {
+  color: white;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
